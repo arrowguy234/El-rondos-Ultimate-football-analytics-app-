@@ -9,7 +9,7 @@ st.set_page_config(page_title="Soccer Tactical Intelligence", layout="wide")
 
 @st.cache_data
 def load_events():
-    return pd.read_parquet("data/processed/events.parquet")
+    return pd.read_csv("data/processed/events.parquet")
 
 @st.cache_data
 def load_player_feats(events):
